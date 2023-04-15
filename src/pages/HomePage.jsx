@@ -100,7 +100,7 @@ const HomePage = () => {
           <h1 className="font-bold md:text-4xl text-2xl text-center">Students</h1>
           <input type="text" className="border p-2 rounded-lg" placeholder='Search for Student...' value={filteredStudent} onChange={handleFilter} />
         </div>
-        <ol className='list-decimal list-inside md:w-[50%] w-full flex flex-col gap-4 h-[200px] overflow-hidden overflow-y-auto'>
+        <ol className='list-decimal list-inside md:w-[50%] w-full flex flex-col gap-4 h-[200px] overflow-hidden overflow-y-auto pr-4'>
           {
             filteredStudents.map(student => (
               <li className='text-md flex items-center justify-between'>
